@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulatore di Roulette</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulatore di Roulette</h1>
+    <p>Saldo: <span id="saldo">1000</span> unità</p>
+    
+    <div>
+      <label for="puntata">Inserisci la puntata: </label>
+      <input type="number" id="puntata" min="1" max="1000" value="10">
+    </div>
+    
+    <div>
+      <label for="scelta">Scegli la tua scommessa: </label>
+      <select id="scelta">
+        <option value="rosso">Rosso</option>
+        <option value="nero">Nero</option>
+        <option value="pari">Pari</option>
+        <option value="dispari">Dispari</option>
+        <option value="numero">Numero</option>
+      </select>
+    </div>
+
+    <button onclick="gioca()">Gioca</button>
+    
+    <p id="risultato"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
